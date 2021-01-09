@@ -1,19 +1,22 @@
-#include<stdio.h>
 #include<conio.h>
+#include<stdio.h>
 main()
 {
-	int a[5],i;
-	for(i=0;i<5;i++)
-	{
-		scanf("%d",&a[i]);
-	}
-	for(i=0;i<5;i++)
-	{
-		printf("%d",a[i]);
-	}
-	printf("\n In Reverse Order!");
-	for(i=4;i>=0;i--)
-	{
-		printf("%d",a[i]);
-	}
+	float B,y,d,x,z,a,A;
+	printf("Enter The value Of B: ");
+	scanf("%f",&B);
+	printf("Enter The value Of Y: ");
+	scanf("%f",&y);
+	printf("Enter The value Of D: ");
+	scanf("%f",&d);
+	printf("Enter The value Of X: ");
+	scanf("%f",&x);
+	printf("Enter The value Of Z: ");
+	scanf("%f",&z);
+	a=(2*B*y);
+	a=a/(d+1);
+	A=x;
+	A=A/(3*(z+y));
+	a=a-A;
+	printf("%f",a);	
 }
