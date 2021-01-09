@@ -1,0 +1,45 @@
+.data
+myname byte "/////////////////HANGMAN/////////////////////////////",0
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;body;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+body1  byte " _________",0
+body2  byte " |       |",0
+body3  byte " |       |",0
+body4  byte " |       |",0
+body4  byte " |       |",0
+body5  byte " |       O",0
+body6  byte " |     ?-|-?",0
+body7 byte "  |       | ",0
+body8 byte " _|______/_\\________",0
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+
+
+
+
+
+
+space byte ' ',0
+
+.code
+
+main PROC
+    mov esi,0
+    mov eax,0
+    mov ecx,lengthof myname
+    mov edx,offset myname
+
+L1:
+
+mov eax,yellow 
+call settextcolor
+call writestring
+mov eax,white
+call settextcolor
+call crlf
+ mov edx,offset myname1
+ call writestring
+
+exit
